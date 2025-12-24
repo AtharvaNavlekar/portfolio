@@ -271,6 +271,30 @@ function initScroll() {
     });
   });
 
+  // --- SMART EMAIL LINK HANDLING ---
+  const emailLink = document.querySelector("#email-link");
+  if (emailLink) {
+    emailLink.addEventListener("click", (e) => {
+      // If it's a mobile device, let the default behavior (mailto) happen
+      if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+        return;
+      }
+
+      // For desktop, try to open Gmail in a new tab to "stay in the browser"
+      // This avoids the annoying "Choose an app" dialog if no mail client is set
+      e.preventDefault();
+      const email = "thenavlekar@gmail.com";
+      const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${email}`;
+
+      // Open Gmail in a new tab
+      window.open(gmailUrl, "_blank");
+
+      // Fallback: If they don't use Gmail, we can copy to clipboard
+      // (Optional: You could also just use the mailto link if they prefer)
+      // For now, opening Gmail is the best way to "stay in the same app" (browser).
+    });
+  }
+
   ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
   ScrollTrigger.refresh();
 }
