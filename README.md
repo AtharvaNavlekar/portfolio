@@ -6,7 +6,7 @@ Welcome to the personal portfolio repository of **Atharva Navlekar**, a creative
 
 This responsive website serves as a digital resume and showcase platform. It features smooth scrolling, modern typography, and engaging animations to provide an immersive user experience.
 
-**Live Demo:** [https://atharvanavlekar.com/](https://atharvanavlekar.com/) (If hosted)
+**Live Demo:** [https://thenavlekar.netlify.app/](https://thenavlekar.netlify.app/)
 
 ## ✨ Features
 
