@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Background -->
+  <rect fill="#050505" width="64" height="64" rx="12"/>
+  
+  <!-- Letter A (centered) -->
+  <path fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" d="M10 50 L22 14 L34 50 M14 40 L30 40"/>
+  
+  <!-- Letter N (centered) -->
+  <path fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" d="M38 50 L38 14 L54 50 L54 14"/>
+</svg>
